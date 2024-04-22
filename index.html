@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dork Engine</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="icon" href="./src/img/zeus.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Dork Engine</h1>
+        <input class="domain" type="text" id="target" placeholder="Enter Domain: (example.com)" />
+        <select class="dorkSelect" id="dorkSelect">
+            <option value="0">Select Dork</option>
+            <option value="17">.htaccess Sensitive Files</option>
+            <option value="33">.php Files (Wayback)</option>
+            <option value="15">3rd Party Exposures</option>
+            <option value="42">Admin Portal</option>
+            <option value="14">Apache STRUTS RCE</option>
+            <option value="39">ArcGIS REST Services Directory</option>
+            <option value="5">Backup and Old Files</option>
+            <option value="66">Blind XSS</option>
+            <option value="30">Certificate Transparency</option>
+            <option value="1">Directory Listing</option>
+            <option value="62">Docker-Compose File</option>
+            <option value="51">Drupal Login</option>
+            <option value="2">Exposed Configuration Files</option>
+            <option value="3">Exposed Database Files</option>
+            <option value="4">Exposed LOG Files</option>
+            <option value="44">File Upload</option>
+            <option value="27">Find MIME-SWF (Wayback)</option>
+            <option value="25">Find MIME-SWF</option>
+            <option value="19">Find Sub-Subdomains</option>
+            <option value="18">Find Subdomains</option>
+            <option value="26">Find SWF links in the past</option>
+            <option value="24">Find SWF</option>
+            <option value="20">Find WordPress #2</option>
+            <option value="10">Find WordPress</option>
+            <option value="11">Finding Backdoors</option>
+            <option value="49">Github API</option>
+            <option value="63">Index of /etc</option>
+            <option value="46">Index of conf.php</option>
+            <option value="56">Index of download.php</option>
+            <option value="12">Install / Setup Files</option>
+            <option value="52">Joomla Database/</option>
+            <option value="57">jwks-rsa file</option>
+            <option value="6">Login pages</option>
+            <option value="41">main.yml file</option>
+            <option value="59">MySQL File</option>
+            <option value="13">Open Redirects</option>
+            <option value="9">phpinfo()</option>
+            <option value="8">Publicly exposed documents</option>
+            <option value="55">Remote procedure call protocol</option>
+            <option value="36">Search in Censys (Certificates)</option>
+            <option value="35">Search in Censys (Domain)</option>
+            <option value="34">Search in Censys (IPv4)</option>
+            <option value="21">Search in GITHUB</option>
+            <option value="32">Search in Reddit</option>
+            <option value="37">Search in SHODAN</option>
+            <option value="28">Search in Web Archive #1</option>
+            <option value="29">Search in Web Archive #2</option>
+            <option value="31">Search OpenBugBounty</option>
+            <option value="67">Security Headers</option>
+            <option value="48">Sensitive Admin Backup</option>
+            <option value="47">Sharing API Info</option>
+            <option value="7">SQL errors</option>
+            <option value="53">Sql File</option>
+            <option value="64">SQL Database Directories</option>
+            <option value="22">Test CrossDomain</option>
+            <option value="38">Vulnerable Servers</option>
+            <option value="45">Vulnerable Wordpress Plugin</option>
+            <option value="58">Wordpress Backup</option>
+            <option value="43">Wordpress Juicy file 1</option>
+            <option value="50">Wordpress Juicy file 2</option>
+            <option value="54">Wordpress Juicy file 3</option>
+            <option value="40">wp-content Juicy Info</option>
+            <option value="65">XSS Queries</option>
+            <option value="60">YML Files</option>
+        </select>
+        <button class="shadow__btn" onclick="executeSearch()">Search</button>
+    </div>
+    <div class="socials">by <a href="http://github.com/siimsek" target="_blank" rel="noopener noreferrer"
+            class="git">siimsek</a></div>
+    <div class="gradient"></div>
+    <script src="./src/js/dork.js"></script>
+</body>
+
+</html>

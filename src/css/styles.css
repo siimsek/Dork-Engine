@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Sterion;
+    src: url(../font/Sterion.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    font-family: Bebas;
+}
+
+html,
+body {
+    display: table;
+    width: 100vw;
+    height: 100vh;
+    background-color: #171717;
+    color: #ffffff;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 5px;
+    font-size: 9vw;
+    font-family: Sterion;
+    z-index: 10;
+    color: white;
+}
+
+.domain {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #17171750;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 7px;
+    color: white;
+    width: 50%;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+
+.domain:hover {
+    background-color: #171717;
+}
+
+.dorkSelect {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #17171750;
+    border: 3px solid #ffffff;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    width: 50%;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+
+.dorkSelect:focus,
+.dorkSelect:hover {
+    background-color: #171717;
+}
+
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    z-index: 5;
+    background: #171717;
+    box-shadow: 0 0 25px #171717;
+}
+
+.shadow__btn:hover {
+    box-shadow: 0 0 5px #171717, 0 0 25px #171717, 0 0 50px #171717, 0 0 100px #171717;
+}
+
+.socials {
+    position: absolute;
+    color: white;
+    z-index: 10;
+    left: 15px;
+    bottom: 15px;
+    font-size: 12px;
+}
+
+.git {
+    font-family: Sterion;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.gradient {
+    --size: 75vmin; /* Use viewport units to make it responsive */
+    --speed: 12s;
+    --easing: ease-in-out;
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(to bottom right, #3300ff, #51ff00);
+    animation: rotate var(--speed) var(--easing) infinite;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    opacity: 0.5;
+}
+
+@keyframes rotate {
+    0%, 100% {
+        transform: rotate(0deg) translate(-50%, -50%);
+    }
+    
+    25% {
+        transform: rotate(90deg) translate(-50%, -50%);
+    }
+    
+    50% {
+        transform: rotate(180deg) translate(-50%, -50%);
+    }
+    
+    75% {
+        transform: rotate(270deg) translate(-50%, -50%);
+    }
+}
