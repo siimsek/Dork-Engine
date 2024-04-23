@@ -12,7 +12,7 @@ function executeSearch() {
         return;
     }
 
-    var searchQuery = 'site:' + targetDomain;
+    var searchQuery = 'site:' + targetDomain + " ";
 
     switch (parseInt(selectedDork)) {
         case 1:
@@ -136,7 +136,7 @@ function executeSearch() {
             window.open(url, '_blank');
             return;
         case 33:
-            var url = 'https://web.archive.org/cdx/search?url=' + targetDomain +'%2F&matchType=domain&collapse=urlkey&output=text&fl=original&filter=urlkey:.*php&limit=100000';
+            var url = 'https://web.archive.org/cdx/search?url=' + targetDomain + '%2F&matchType=domain&collapse=urlkey&output=text&fl=original&filter=urlkey:.*php&limit=100000';
             window.open(url, '_blank');
             return;
         case 34:
@@ -232,12 +232,12 @@ function executeSearch() {
             break
         case 64:
             searchQuery += ' "sql" "parent" intitle:index.of -injection'
-            break 
+            break
         case 65:
-            searchQuery += 'inurl:q | inurl:s | inurl:search | inurl:id | inurl:lang | inurl:keyw|d | inurl:query | inurl:page | inurl:view | inurl:type | inurl:url'
+            searchQuery += ' inurl:q | inurl:s | inurl:search | inurl:id | inurl:lang | inurl:keyw|d | inurl:query | inurl:page | inurl:view | inurl:type | inurl:url'
             break
         case 66:
-            searchQuery += 'intitle:contact |  inurl:feedback | inurl:Send Us a Message | intitle:Send Us a Message | intitle:support | intext:Please choose a request type below | inurl:submit'
+            searchQuery += ' intitle:contact |  inurl:feedback | inurl:Send Us a Message | intitle:Send Us a Message | intitle:support | intext:Please choose a request type below | inurl:submit'
             break
         case 67:
             var site = targetDomain;
